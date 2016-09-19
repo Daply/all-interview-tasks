@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Administration panel</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="~/Content/theme.css" rel="stylesheet" media="screen" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default"><p style="text-align: center;  color: white;font-size: 30px; font-family: 'Arial', courier, serif; font-weight: 800; margin-top: 10px">Administration panel</p></nav>
+    <div style="margin: 50px">
+        <h3>All clients base</h3>
+        <table class="table table-striped table-hover">
+            <tr class="info">
+                <td><p>First name</p></td>
+                <td><p>Last name</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Clients)
+            {
+                <tr>
+                    <td><p>@b.First_Name</p></td>
+                    <td><p>@b.Last_Name</p></td>
+                    <td><p><a href="/Home/ClientCard/@b.ClientId">Open client card</a></p></td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div style="margin: 50px" class="next">
+        <a href="/Home/Index">&larr; Back to main menu</a>
+    </div>
+</body>
+</html>
