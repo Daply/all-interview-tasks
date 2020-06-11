@@ -1,0 +1,58 @@
+﻿@model Administrators_Service_Station.Models.Order
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Administration panel</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="~/Content/theme.css" rel="stylesheet" media="screen" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default"><p style="text-align: center;  color: white;font-size: 30px; font-family: 'Arial', courier, serif; font-weight: 800; margin-top: 10px">Administration panel</p></nav>
+    <div style="margin-left: 300px" class="col-lg-6">
+        <form class="form-horizontal" method="post" action="">
+            <input type="hidden" value="@ViewBag.CarId" name="CarId" />
+            <input type="hidden" value="@ViewBag.Order.OrderId" name="OrderId" />
+            <fieldset>
+                <div class="form-group">
+                    <label for="inputDate" class="col-lg-2 control-label">Date</label>
+                    <div class="col-lg-10">
+                        <input type="date" class="form-control" id="inputDate" value="@ViewBag.Order.Date" name="Date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputOrderAmount" class="col-lg-2 control-label">Order amount</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="inputOrderAmount" value="@ViewBag.Order.Order_Amount" placeholder="Order amount" name="Order_Amount">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputStatus" class="col-lg-2 control-label">Order status</label>
+                    <div class="col-lg-10">
+                        <select id="inputStatus" class="form-control" name="Order_Status">
+                            <option value="In_Progress">In progress</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Cancelled">Cancelled</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <input class="btn btn-success" type="submit" value="Submit" />
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <a href="/Home/Orders/@ViewBag.CarId">&larr; Back to Orders</a>
+    </div>
+</body>
+</html>
