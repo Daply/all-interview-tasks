@@ -38,12 +38,12 @@ The task is to implement a model for the Trade object and the REST service that 
 - the response code is 200, and the response body is an array of all trade objects ordered by their ids in increasing order
 - optionally accepts query parameters type and userId, for example <b>/trades/?type=buy&userId=122</b>. All these parameters are optional. In case they are present, only objects matching the parameters must be returned.
 
-<b><code>GET</code></b> request to <b><code>/trades/\\<id\\></code></b>:<br>
+<b><code>GET</code></b> request to <b><code>/trades/\<id\></code></b>:<br>
 - returns a trade with the given id
 - if the matching trade exists, the response code is 200 and the response body is the matching trade object
 - if there is no trade with the given id in the collection, the response code is 404
 
-<b><code>DELETE, PUT, PATCH</code></b> request to <b><code>/trades/\\<id\\></code></b>:<br>
+<b><code>DELETE, PUT, PATCH</code></b> request to <b><code>/trades/\<id\></code></b>:<br>
 - the response code is 405 because the API does not allow deleting or modifying trades for any id value
 
 
@@ -120,7 +120,7 @@ The response code is 200, and when converted to JSON, the response body (assumin
 ]
 ```
 
-GET <b>request to</b> <code>/trades/?userId22</code><br>
+GET <b>request to</b> <code>/trades/?userId/22</code><br>
 The response code is 200, and when converted to JSON, the response body (assuming that the below objects are all objects matching the filter) is as follows:<br>
 ```
 [
@@ -164,7 +164,7 @@ Assuming that the object with id 1 exists, then the response code is 200 and the
 If an object with id 1 doesn't exist, then the response code is 404 and there are no
 particular requirements for the response body.<br>
 
-DELETE <b>request to</b> <code>/trades/l</code><br>
+DELETE <b>request to</b> <code>/trades/1</code><br>
 The response code is 405 and there are no particular requirements for the response body.
 
 
