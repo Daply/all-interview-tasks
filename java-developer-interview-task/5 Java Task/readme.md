@@ -12,7 +12,7 @@ In this prediction game, first player gives the second player some stock market 
 
 For example, the image below shows the stock market data for <i>10</i> consecutive days. The horizontal axis represents the day number, starting at 1, and the axis price on that day.<br>
 
-![Stock Market Data]()<br>
+![Stock Market Data](https://github.com/Daply/all-interview-tasks/blob/master/java-developer-interview-task/5%20Java%20Task/stock-market-data.png)<br>
 
 <b>Example</b><br>
 <i>n = 10</i><br>
