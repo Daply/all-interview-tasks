@@ -1,0 +1,44 @@
+<div>
+  <form [formGroup]="paymentForm" (ngSubmit)="submitForm()">
+
+    <div class="form-group"
+         [ngClass]="{ 'has-error': paymentForm.controls['nameOnCard'].touched && !paymentForm.controls['nameOnCard'].valid }">
+      <label>Name on Card</label>
+      <input formControlName="nameOnCard" class="form-control" type="text" placeholder="John Krane">
+      <div *ngIf="paymentForm.controls['nameOnCard'].touched && !paymentForm.controls['nameOnCard'].valid" 
+           class="alert alert-danger">Invalid Cardholder Name.</div>
+    </div>
+
+    <div class="form-group"
+         [ngClass]="{ 'has-error': paymentForm.controls['cardNumber'].touched && !paymentForm.controls['cardNumber'].valid }">
+      <label>Card Number</label>
+      <input formControlName="cardNumber" class="form-control" type="text" placeholder="1234123412341234">
+      <div *ngIf="paymentForm.controls['cardNumber'].touched && !paymentForm.controls['cardNumber'].valid" 
+           class="alert alert-danger">Invalid Card Number.</div>
+    </div>
+
+    <div class="form-group expiry">
+      <label>Date of Expiration</label>
+      <input formControlName="expirationMonth" class="form-control month" type="text" placeholder="07"
+             [ngClass]="{ 'input-error': paymentForm.controls['expirationMonth'].touched && !paymentForm.controls['expirationMonth'].valid }">
+      <input formControlName="expirationYear" class="form-control year" type="text" placeholder="2017"
+             [ngClass]="{ 'input-error': paymentForm.controls['expirationYear'].touched && !paymentForm.controls['expirationYear'].valid }">
+      <div *ngIf="(paymentForm.controls['expirationMonth'].touched && !paymentForm.controls['expirationMonth'].valid) ||
+                  (paymentForm.controls['expirationYear'].touched && !paymentForm.controls['expirationYear'].valid)"
+           class="alert alert-danger">Invalid Date of Expiration.</div>
+    </div>
+
+    <div class="form-group cvc"
+         [ngClass]="{ 'has-error': paymentForm.controls['cvv'].touched && !paymentForm.controls['cvv'].valid }">
+      <label>CVV/CVC</label>
+      <input formControlName="cvv" class="form-control" type="text" placeholder="123">
+      <div *ngIf="paymentForm.controls['cvv'].touched && !paymentForm.controls['cvv'].valid" 
+           class="alert alert-danger">Invalid CVV / CVC Number.</div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <h3 class="center-block text-center">{{ displayMessage }}</h3>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+form {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.expiry{
+  width: 20%;
+  display: inline-block;
+}
+
+.cvc {
+  width: 40%;
+  display: inline-block;
+}
+
+.info p {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.month, .year {
+  width: 45%;
+}
+
+.month{
+  display: inline;
+}
+
+.year{
+  display: inline-block;
+}
