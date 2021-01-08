@@ -47,7 +47,7 @@ The task is to implement a model for the Trade object and the REST service that 
 - the response code is 405 because the API does not allow deleting or modifying trades for any id value
 
 
-You should complete the given project so that it passes all the test cases when running the provided <i>unit</> tests. The project by default supports the use of the H2 database.
+You should complete the given project so that it passes all the test cases when running the provided <i>unit</i> tests. The project by default supports the use of the H2 database.
 
 
 <b>Example requests and responses</b><br>
@@ -120,7 +120,7 @@ The response code is 200, and when converted to JSON, the response body (assumin
 ]
 ```
 
-GET <b>request to</b> <code>/trades/?userId/22</code><br>
+GET <b>request to</b> <code>/trades/?userId=122</code><br>
 The response code is 200, and when converted to JSON, the response body (assuming that the below objects are all objects matching the filter) is as follows:<br>
 ```
 [
