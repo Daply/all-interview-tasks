@@ -4,13 +4,13 @@
 ## Orders Query
 Company X has a record of its customers and their orders. Find the customer(s) with the highest order price for orders placed within 10 years of the first order (earliest order_date) in the database. Print the customer name and order price. If multiple records are returned, they can be in any order.<br>
 
-<b>Schema</b>
+<b>Schema</b><br>
 There are 2 tables: CUSTOMERS, ORDERS.<br>
 
 <table>
 <tbody>
 <tr>
-<td style="text-align: center; vertical-align: middle;">
+<td style="text-align: center; vertical-align: middle;" colspan="3">
 <p><b>CUSTOMERS</b></p>
 </td>
 </tr>
@@ -53,7 +53,7 @@ There are 2 tables: CUSTOMERS, ORDERS.<br>
 <table>
 <tbody>
 <tr>
-<td style="text-align: center; vertical-align: middle;">
+<td style="text-align: center; vertical-align: middle;" colspan="3">
 <p><b>ORDERS</b></p>
 </td>
 </tr>
@@ -99,7 +99,7 @@ There are 2 tables: CUSTOMERS, ORDERS.<br>
 <table>
 <tbody>
 <tr>
-<td style="text-align: center; vertical-align: middle;">
+<td style="text-align: center; vertical-align: middle;" colspan="3">
 <p><b>CUSTOMERS</b></p>
 </td>
 </tr>
@@ -142,7 +142,7 @@ There are 2 tables: CUSTOMERS, ORDERS.<br>
 <table>
 <tbody>
 <tr>
-<td style="text-align: center; vertical-align: middle;">
+<td style="text-align: center; vertical-align: middle;" colspan="3">
 <p><b>ORDERS</b></p>
 </td>
 </tr>
