@@ -16,12 +16,12 @@ Here is an example of a trade JSON object:<br>
 ```
 {
 "id": 1,
-"type”: “buy”,
-“userId”: 23,
-“symbol”: “ABX”,
-“shares”: 30,
-“price”: 134s,
-“timestamp”: 1531522701000
+"type": "buy",
+"userId": 23,
+"symbol": "ABX",
+"shares": 30,
+"price": 134s,
+"timestamp": 1531522701000
 }
 ```
 
@@ -55,25 +55,25 @@ POST <b>request to</b> <code>/trade</code><br>
 Request body:<br>
 ```
 {
- “type”: “buy”,
-“userId”: 1,
-“symbol”: “AC”,
-“shares”: 28,
-“price”: 162,
-“timestamp”: 1591514264000
+"type": "buy",
+"userId": 1,
+"symbol": "AC",
+"shares": 28,
+"price": 162,
+"timestamp": 1591514264000
 }
 ```
 
 The response code 201, and when converted to JSON, the response body is:<br>
 ```
 {
-“id”: 1,
- “type”: “buy”,
-“userId”: 1,
-“symbol”: “AC”,
-“shares”: 28,
-“price”: 162,
-“timestamp”: 1591514264000
+"id": 1,
+"type": "buy",
+"userId": 1,
+"symbol": "AC",
+"shares": 28,
+"price": 162,
+"timestamp": 1591514264000
 }
 ```
 
@@ -84,22 +84,22 @@ The response code is 200, and when converted to JSON, the response body (assumin
 ```
 [
 {
-“id”: 1,
- “type”: “buy”,
-“userId”: 1,
-“symbol”: “AC”,
-“shares”: 28,
-“price”: 162,
-“timestamp”: 1591514264000
+"id": 1,
+ "type": "buy",
+"userId": 1,
+"symbol": "AC",
+"shares": 28,
+"price": 162,
+"timestamp": 1591514264000
 },
 {
-“id”: 2,
- “type”: “sell”,
-“userId”: 1,
-“symbol”: “AC”,
-“shares”: 28,
-“price”: 162,
-“timestamp”: 1591514264000
+"id": 2,
+ "type": "sell",
+"userId": 1,
+"symbol": "AC",
+"shares": 28,
+"price": 162,
+"timestamp": 1591514264000
 }
 ]
 ```
@@ -109,13 +109,13 @@ The response code is 200, and when converted to JSON, the response body (assumin
 ```
 [
 {
-“id”: 1,
- “type”: “buy”,
-“userId”: 1,
-“symbol”: “AC”,
-“shares”: 28,
-“price”: 162,
-“timestamp”: 1591514264000
+"id": 1,
+ "type": "buy",
+"userId": 1,
+"symbol": "AC",
+"shares": 28,
+"price": 162,
+"timestamp": 1591514264000
 }
 ]
 ```
@@ -125,22 +125,22 @@ The response code is 200, and when converted to JSON, the response body (assumin
 ```
 [
 {
-“id”: 1,
- “type”: “buy”,
-“userId”: 1,
-“symbol”: “AC”,
-“shares”: 28,
-“price”: 162,
-“timestamp”: 1591514264000
+"id": 1,
+ "type": "buy",
+"userId": 1,
+"symbol": "AC",
+"shares": 28,
+"price": 162,
+"timestamp": 1591514264000
 },
 {
-“id”: 2,
- “type”: “sell”,
-“userId”: 1,
-“symbol”: “AC”,
-“shares”: 28,
-“price”: 162,
-“timestamp”: 1591514264000
+"id": 2,
+ "type": "sell",
+"userId": 1,
+"symbol": "AC",
+"shares": 28,
+"price": 162,
+"timestamp": 1591514264000
 }
 ]
 ```
@@ -150,13 +150,13 @@ Assuming that the object with id 1 exists, then the response code is 200 and the
 ```
 [
 {
-“id”: 1,
- “type”: “buy”,
-“userId”: 1,
-“symbol”: “AC”,
-“shares”: 28,
-“price”: 162,
-“timestamp”: 1591514264000
+"id": 1,
+ "type": "buy",
+"userId": 1,
+"symbol": "AC",
+"shares": 28,
+"price": 162,
+"timestamp": 1591514264000
 }
 ]
 ```
