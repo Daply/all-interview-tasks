@@ -10,21 +10,21 @@ The form contains four fields: Name on Card, Card Number, Expiration, and CVC/CV
 - Expiration Year: A 4-digit integer denoting the card's expiration year.
 - cWwcvc Number: A string consisting of exactly 3 numbers.
 
-![Payment Validation](payment-validation-1)<br>
+![Payment Validation](https://github.com/Daply/all-interview-tasks/blob/master/java-developer-interview-task/3%20Angular%20Task/payment-validation-1.png)<br>
 
 - The border of each input field must turn red in real time if the data entered into it is invalid.
 - The form must use the concept Of Reactive Forms.
 - If all fields are successfully validated. clicking the Verify button prints a message saying: Payment Successful!
 
-![Payment Validation](payment-validation-2)<br>
+![Payment Validation](https://github.com/Daply/all-interview-tasks/blob/master/java-developer-interview-task/3%20Angular%20Task/payment-validation-2.png)<br>
 
 - If all fields are not successfully validated. clicking the Verify button prints a message saying: payment Failed!.
 
-![Payment Validation](payment-validation-3)<br>
+![Payment Validation](https://github.com/Daply/all-interview-tasks/blob/master/java-developer-interview-task/3%20Angular%20Task/payment-validation-3.png)<br>
 
 ## Software Instructions
 The question(s) requires <b>Node 8 L TS or above</b>.<br>
-• https//nodejs.org/en/download <br>
+• <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download</a><br>
 
 
 ## Git Instructions
